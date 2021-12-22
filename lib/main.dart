@@ -11,15 +11,33 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: SafeArea(
-          child: Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.all(40.0),
-            height: 300.0,
-            width: 400.0,
-            color: Colors.white,
-            child: const Text('this is text'),
+        appBar: AppBar(
+          title: const Text('AppBar'),
+          backgroundColor: Colors.red,
+          leading: const Icon(Icons.menu),
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.favorite),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: const Icon(Icons.delete),
+              onPressed: () {},
+            ),
+          ],
+        ),
+        body: Container(
+          height: 200.0,
+          width: 600.0,
+          color: Colors.amber,
+          child: const Icon(
+            Icons.camera_alt,
+            size: 50.0,
+            color: Colors.red,
           ),
         ),
       ),
