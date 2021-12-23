@@ -31,48 +31,27 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
+         mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
             Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.cyan[50],
-              child: Text('Container'),
+              color: Colors.cyan,
+              height: 90.0,
+              width: 90.0,
+              child: FlutterLogo(),
             ),
-            RaisedButton(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.cyan.shade200,
-              onPressed: () {
-                print('Raised button');
-              },
-              child: const Text('Raised button',
-                  style: TextStyle(color: Colors.black)),
+            Container(
+              color: Colors.pinkAccent,
+              height: 100.0,
+              width: 120.0,
+              child: FlutterLogo(),
             ),
-            FlatButton(
-                padding: EdgeInsets.all(30.0),
-                color: Colors.cyan,
-                onPressed: () {
-                  print('Flat Button');
-                },
-                child: Text('Flat Button')),
-            FloatingActionButton(
-              onPressed: () {
-                print('Floating Actions Buttton');
-              },
-              child: Icon(Icons.favorite),
-            ),
-            FloatingActionButton.extended(
-              backgroundColor: Colors.cyan,
-              foregroundColor: Colors.black,
-              onPressed: () {},
-              label: Text('Flating Action Button Extended'),
-              icon: Icon(Icons.account_circle),
-            ),
-            RaisedButton.icon(
-                color: Colors.cyan,
-                onPressed: () {},
-                icon: Icon(Icons.mail),
-                label: Text('Raise Buton Icon')),
+            Container(
+              color: Colors.deepPurple,
+              height: 150.0,
+              width: 190.0,
+              child: FlutterLogo(),
+            )
           ],
         ),
       ),
