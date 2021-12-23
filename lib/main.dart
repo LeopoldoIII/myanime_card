@@ -30,15 +30,50 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Container(
-          height: 200.0,
-          width: 600.0,
-          color: Colors.amber,
-          child: const Icon(
-            Icons.camera_alt,
-            size: 50.0,
-            color: Colors.red,
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan[50],
+              child: Text('Container'),
+            ),
+            RaisedButton(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan.shade200,
+              onPressed: () {
+                print('Raised button');
+              },
+              child: const Text('Raised button',
+                  style: TextStyle(color: Colors.black)),
+            ),
+            FlatButton(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.cyan,
+                onPressed: () {
+                  print('Flat Button');
+                },
+                child: Text('Flat Button')),
+            FloatingActionButton(
+              onPressed: () {
+                print('Floating Actions Buttton');
+              },
+              child: Icon(Icons.favorite),
+            ),
+            FloatingActionButton.extended(
+              backgroundColor: Colors.cyan,
+              foregroundColor: Colors.black,
+              onPressed: () {},
+              label: Text('Flating Action Button Extended'),
+              icon: Icon(Icons.account_circle),
+            ),
+            RaisedButton.icon(
+                color: Colors.cyan,
+                onPressed: () {},
+                icon: Icon(Icons.mail),
+                label: Text('Raise Buton Icon')),
+          ],
         ),
       ),
     );
