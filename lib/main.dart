@@ -30,9 +30,9 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
-         mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
               color: Colors.cyan,
@@ -42,14 +42,14 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               color: Colors.pinkAccent,
-              height: 100.0,
-              width: 120.0,
+              height: 90.0,
+              width: 90.0,
               child: FlutterLogo(),
             ),
             Container(
               color: Colors.deepPurple,
-              height: 150.0,
-              width: 190.0,
+              height: 90.0,
+              width: 90.0,
               child: FlutterLogo(),
             )
           ],
