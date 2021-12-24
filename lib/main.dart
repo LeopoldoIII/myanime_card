@@ -33,11 +33,16 @@ class MyApp extends StatelessWidget {
         body: Row(
           children: [
             Expanded(
-                child: Image.network(
-                    'https://scontent.fmex3-1.fna.fbcdn.net/v/t1.6435-9/138661173_1057033074809632_8835808435703499469_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=973b4a&_nc_ohc=TwVhnP_CnOcAX85GMvR&_nc_ht=scontent.fmex3-1.fna&oh=00_AT_pWhMEMC5SZQm2PC2HJAnT_F2GULpwbOLDDs8CT9WDtg&oe=61EA89FC')),
-                    
+              child: Image.network(
+                  'https://scontent.fmex3-1.fna.fbcdn.net/v/t1.6435-9/138661173_1057033074809632_8835808435703499469_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=973b4a&_nc_ohc=TwVhnP_CnOcAX85GMvR&_nc_ht=scontent.fmex3-1.fna&oh=00_AT_pWhMEMC5SZQm2PC2HJAnT_F2GULpwbOLDDs8CT9WDtg&oe=61EA89FC'),
+            ),
+            const SizedBox(
+              width: 20.0,
+            ),
+            const Text('this is text widget'),
           ],
         ),
+        
       ),
     );
   }
