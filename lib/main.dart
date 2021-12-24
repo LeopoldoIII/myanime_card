@@ -31,27 +31,11 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              color: Colors.cyan,
-              height: 90.0,
-              width: 90.0,
-              child: FlutterLogo(),
-            ),
-            Container(
-              color: Colors.pinkAccent,
-              height: 90.0,
-              width: 90.0,
-              child: FlutterLogo(),
-            ),
-            Container(
-              color: Colors.deepPurple,
-              height: 90.0,
-              width: 90.0,
-              child: FlutterLogo(),
-            )
+            Expanded(
+                child: Image.network(
+                    'https://scontent.fmex3-1.fna.fbcdn.net/v/t1.6435-9/138661173_1057033074809632_8835808435703499469_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=973b4a&_nc_ohc=TwVhnP_CnOcAX85GMvR&_nc_ht=scontent.fmex3-1.fna&oh=00_AT_pWhMEMC5SZQm2PC2HJAnT_F2GULpwbOLDDs8CT9WDtg&oe=61EA89FC')),
+                    
           ],
         ),
       ),
