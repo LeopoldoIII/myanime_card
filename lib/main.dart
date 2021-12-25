@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
             ),
-            child: const Text('"Successful people do what unsuccesfull'
+            child: Text('"Successful people do what unsuccesfull'
                 'People are not willing to do. Don\'t wish it were easier; wish you were better "'),
           ),
         ),
