@@ -11,35 +11,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('AppBar'),
-          backgroundColor: Colors.red,
-          leading: const Icon(Icons.menu),
-          actions: <Widget>[
-            IconButton(
-              icon: const Icon(Icons.favorite),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.delete),
-              onPressed: () {},
-            ),
-          ],
-        ),
         body: Center(
-          child: Card(
-            color: Colors.cyan,
-            elevation: 10.0,
-            shadowColor: Colors.black,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12.0),
-            ),
-            child: Text('"Successful people do what unsuccesfull'
-                'People are not willing to do. Don\'t wish it were easier; wish you were better "'),
+          child: Stack(
+            children: [
+              Container(
+                color: Colors.cyan,
+                height: 300.0,
+                width: 300.0,
+              ),
+              Container(
+                color: Colors.black,
+                height: 100.0,
+                width: 100.0,
+              )
+            ],
           ),
         ),
       ),
